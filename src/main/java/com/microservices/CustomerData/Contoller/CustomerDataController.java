@@ -20,12 +20,10 @@ public class CustomerDataController {
 
 	@RequestMapping("/users")
 	public List<Customer> getAllCustomer() {
-
 		var iteratorList = customerRepository.findAll();
 		var customers = new ArrayList<Customer>();
 		iteratorList.forEach(it -> customers.add(it));
 		return customers;
-
 	}
 	
 	@RequestMapping("/user/{id}")

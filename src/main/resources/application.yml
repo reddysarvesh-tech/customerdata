@@ -12,7 +12,7 @@ spring:
     password: password
     driverClassName: org.h2.Driver
   application:
-   name: movie-info-service  
+   name: customer-data  
    
 eureka:
   client:
